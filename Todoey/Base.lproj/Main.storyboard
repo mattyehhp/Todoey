@@ -32,7 +32,14 @@
                             <outlet property="delegate" destination="luc-k6-vty" id="wPZ-wj-3gA"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Todoey" id="tkf-p7-8D2"/>
+                    <navigationItem key="navigationItem" title="Todoey" id="tkf-p7-8D2">
+                        <barButtonItem key="rightBarButtonItem" title="+" id="SLa-Bz-r5N">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="addButtonPressed:" destination="luc-k6-vty" id="f8e-T2-6aw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="TodolistTableView" destination="wcP-gN-8O7" id="CGo-Qn-MRG"/>
                     </connections>
@@ -46,10 +53,10 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="txy-im-4vO" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Q0f-8g-wU1">
+                    <navigationBar key="navigationBar" alpha="0.0" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="Q0f-8g-wU1">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
